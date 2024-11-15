@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tobechukwu Anunobi - Software Engineer & Digital Creator. Explore my portfolio of web development and software engineering projects.">
+    <title>Tobechukwu Anunobi - Software Engineer & Digital Creator</title>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@400;700&display=swap" as="style">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons - Load asynchronously -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+        <i class="fas fa-moon" aria-hidden="true"></i>
+    </button>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section-gradient" id="home" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-title">Building Digital Experiences</h1>
+                    <p>Hi, I'm Tobechukwu Anunobi. I craft beautiful, functional websites and applications that make a difference.</p>
+                    <div class="hero-cta">
+                        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="profile.jpg" alt="Tobechukwu Anunobi" width="300" height="300" loading="lazy" 
+                         onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'">
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Skills Section -->
+        <section class="skills section-gradient alt" id="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 id="skills-title" class="section-title">My Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Web Development</h3>
+                        <p>Creating responsive and dynamic web applications using modern technologies</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile Development</h3>
+                        <p>Building cross-platform mobile applications with seamless user experience</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database"></i>
+                        <h3>Database Design</h3>
+                        <p>Architecting efficient and scalable database solutions</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud Services</h3>
+                        <p>Deploying and managing applications on cloud platforms</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio section-gradient" id="portfolio" aria-labelledby="portfolio-title">
+            <div class="container">
+                <h2 id="portfolio-title" class="section-title">Featured Projects</h2>
+                <div class="portfolio-grid">
+                    <article class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" 
+                             alt="" width="350" height="197" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>BitPrime Invest</h3>
+                            <p>Investment Platform Development</p>
+                        </div>
+                    </article>
+                    <article class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" 
+                             alt="" width="350" height="197" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>DeGiro</h3>
+                            <p>Financial Technology Solutions</p>
+                        </div>
+                    </article>
+                    <article class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" 
+                             alt="" width="350" height="197" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>GoBitInvest</h3>
+                            <p>Cryptocurrency Trading Platform</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Contact Section -->
+        <section class="contact section-gradient alt" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" class="section-title">Get In Touch</h2>
+                <div class="contact-options">
+                    <p>Contact us via:</p>
+                    <ul class="icon-with-label">
+                        <li><a href="https://wa.me/2348146748036" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i> WhatsApp</a></li>
+                        <li><a href="tel:+2348146748036" aria-label="Phone"><i class="fas fa-phone fa-2x" aria-hidden="true"></i> Phone</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+    </main>
+
+    <footer class="section-gradient">
+        <div class="container">
+            <p class="copyright">&copy; 2024 Tobechukwu Anunobi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+</body>
+</html>
